@@ -8,6 +8,12 @@ réécriture en Rust.
 | [01 — Analyse de l'existant](01-analyse-existant.md) | Inventaire, architecture, netcode, physique, assets, dette technique. Ce qui a de la valeur et ce qu'il faut jeter. |
 | [02 — Plan de réécriture Rust](02-plan-reecriture-rust.md) | Choix technologiques, architecture cible, netcode, contraintes mobile (Android/iOS), feuille de route en 8 phases, décisions à trancher. |
 | [03 — Référence de gameplay](03-reference-gameplay.md) | Toutes les constantes physiques, règles de session, formules de vol, constantes réseau et cas de test de non-régression du *feel*. |
+| [04 — Conception du nouveau jeu](04-conception-jeu.md) | **Document de conception du jeu neuf** : boucle de jeu, bots, architecture réseau (hôte-joueur + relais + code de partie), monétisation, périmètre de la v1, jalons et risques. |
+
+> Les documents 01 à 03 analysent l'original (GPL v2+, assets appartenant à
+> leurs auteurs). Le document 04 décrit un **jeu neuf**, sans réutilisation de
+> code, d'assets ni du nom, et a vocation à déménager dans le dépôt propre du
+> nouveau projet.
 
 ## Résumé en trois phrases
 
