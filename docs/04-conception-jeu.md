@@ -9,7 +9,8 @@
 > documents [01](01-analyse-existant.md) et [03](03-reference-gameplay.md).
 > Ce fichier a vocation à déménager dans le dépôt propre du nouveau jeu.
 >
-> **Nom de code : `PROJET-PINGOUIN`.** Un vrai nom reste à trouver.
+> **Nom de code : `SKYDUNK`.** Nom de travail, à confirmer ou remplacer à M5,
+> avant les pages boutique et le dépôt de marque (voir §12).
 
 ---
 
@@ -132,6 +133,32 @@ Conçus pour le pouce d'abord, le clavier ensuite.
 
 Une seule action discrète dans tout le jeu. C'est ce qui le rend jouable d'une
 main dans le métro — et c'est un atout à ne pas gâcher en ajoutant des verbes.
+
+---
+
+### 3.6 Identité : ni animal ni biome imposés
+
+**Décision : le jeu n'est enfermé ni dans le pingouin ni dans la glace.**
+
+- Le personnage de départ est un pingouin, en hommage — mais les skins pourront
+  être n'importe quel animal.
+- La glace est le thème du premier lot de niveaux, pas l'univers du jeu.
+  Désert, jungle, volcan, ville sont ouverts.
+
+**Conséquence sur le nom :** il doit désigner le **geste**, jamais le
+personnage ni le décor. Un nom contenant pingouin, glace ou neige condamnerait
+à justifier chaque nouveau thème. C'est le critère qui a produit `Skydunk` —
+voler, puis marquer sur une cible.
+
+**Conséquence sur le gameplay, et c'est un cadeau :** la mécanique de la boule
+rend le catalogue de skins gratuit. N'importe quel animal roulé en boule est une
+sphère, donc la physique, la collision et le réseau sont identiques quel que
+soit le personnage. Un skin n'est qu'un maillage et une texture — **aucune ligne
+de code de gameplay**.
+
+> **Règle à ne jamais casser : le personnage doit toujours pouvoir se rouler en
+> sphère.** Tant qu'elle tient, les cosmétiques ne coûtent que de l'art. Le jour
+> où un personnage a une forme propre, on paie une physique par personnage.
 
 ---
 
@@ -465,15 +492,23 @@ Par ordre de probabilité de tuer le projet.
 | En ligne | Hôte-joueur + code de partie | ✅ |
 | Transport | Relais, pas de P2P | ✅ |
 | Taille de partie | 8 | ✅ |
+| Nom de code | `Skydunk` — nom du geste, pas du personnage | ✅ |
+| Univers | Ni animal ni biome imposés. Le personnage doit rester sphérique | ✅ |
 
 ## 12. Décisions ouvertes
 
-1. **Le nom.** Bloque le dépôt, le domaine, les pages boutique, l'identité visuelle.
+1. **Le nom commercial définitif.** `Skydunk` est un nom de travail. À
+   confirmer ou remplacer **à M5**, avant les pages boutique. Vérification
+   requise dans cet ordre : Steam Store, App Store, Google Play, domaine
+   `.com`, puis **recherche de marque INPI et EUIPO, classes 9 et 41** — le
+   seul point qui compte juridiquement. Une simple recherche web ne vaut pas
+   recherche d'antériorité.
 2. **La direction artistique.** Détermine le budget de sous-traitance — le
    deuxième risque du projet. À trancher avant M2, pas à M5.
-3. **Le personnage.** Un pingouin, comme l'hommage l'appelle ? Ou une créature
-   propre au jeu, plus facile à défendre juridiquement et à décliner en
-   cosmétiques ?
+3. **Le design du pingouin de départ.** Le principe est tranché (§3.6) : un
+   pingouin d'abord, d'autres animaux en skins. Reste à définir sa silhouette,
+   suffisamment caractéristique pour servir d'icône de boutique, et compatible
+   avec la règle sphérique.
 4. **La pénalité de crash en vol.** L'original annulait tout le score. Trop sec.
    Quelle punition à la place ?
 5. **Le relais mobile** : construit sur mesure ou service tiers ? À trancher à M4.
