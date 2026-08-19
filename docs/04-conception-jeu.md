@@ -497,12 +497,36 @@ Par ordre de probabilité de tuer le projet.
 
 ## 12. Décisions ouvertes
 
-1. **Le nom commercial définitif.** `Skydunk` est un nom de travail. À
-   confirmer ou remplacer **à M5**, avant les pages boutique. Vérification
-   requise dans cet ordre : Steam Store, App Store, Google Play, domaine
-   `.com`, puis **recherche de marque INPI et EUIPO, classes 9 et 41** — le
-   seul point qui compte juridiquement. Une simple recherche web ne vaut pas
-   recherche d'antériorité.
+1. **Le nom commercial définitif.** `Skydunk` est un nom de travail, à
+   confirmer ou remplacer **à M5** — quand il y aura des images et un trailer
+   à tester, donc une décision fondée sur des données plutôt qu'un pari.
+
+   **Critères, dans l'ordre :** un seul mot composé et inventé (une
+   juxtaposition descriptive comme « Sky Dunk » ou « Dunky Ball » se dépose
+   mal et se retient mal) · deux à trois syllabes · prononçable en FR, EN, ES,
+   PT, DE · ni animal ni biome (§3.6) · aucune connotation négative
+   exploitable par la presse.
+
+   **Candidats évalués :**
+
+   | Nom | Verdict |
+   |---|---|
+   | `Skydunk` | Retenu comme nom de travail. Coincé sur rien, déposable, rien trouvé en recherche |
+   | `Flopdrop` | Bonne énergie comique, mais « flop » = échec commercial. Écarté |
+   | `Flingo` | Sûr mais ne raconte rien |
+   | `Faceplanet` | **Écarté** — « Faceplant » existe déjà sur Steam |
+   | `Swoopsie`, `Swoop` | **Écarté** — « Swoop » existe comme jeu vidéo |
+   | `Dunky Ball`, `Flexy Dunk`, `Sky Dunk` | Écartés — deux mots, descriptifs, faibles |
+
+   **Le titre ne vend pas, la capsule vend.** Fall Guys a un titre neutre ; ce
+   qui accroche, c'est l'image. Le titre n'a que trois devoirs : être
+   mémorisable, tapable de tête, et nous appartenir. Ne pas lui demander de
+   porter le chaos — c'est le travail de la capsule et du trailer.
+
+   **Vérification à faire avant de déposer** : Steam Store, App Store, Google
+   Play, domaine `.com`, puis **recherche de marque INPI et EUIPO, classes 9
+   et 41** — le seul point qui compte juridiquement. Une recherche web ne vaut
+   pas recherche d'antériorité.
 2. **La direction artistique.** Détermine le budget de sous-traitance — le
    deuxième risque du projet. À trancher avant M2, pas à M5.
 3. **Le design du pingouin de départ.** Le principe est tranché (§3.6) : un
