@@ -274,12 +274,51 @@ IP des joueurs. Le gain réel est faible ; on garde seulement la porte ouverte.
 Modèle retenu, calqué sur ce qui fonctionne déjà pour Among Us : **le mobile
 fait le volume, le PC fait l'argent.**
 
-### 6.1 Steam — le produit
+### 6.1 Le modèle de référence, correctement lu
 
-Prix : **5 à 8 €**. Achat unique, tout débloqué, aucune publicité, aucun achat
-intégré. C'est le produit fini, et c'est le message marketing.
+Among Us est la référence la plus proche. Attention à ne pas s'arrêter au
+modèle de 2020, qui est souvent celui décrit en ligne :
 
-### 6.2 Mobile — le canal
+- **En 2020** : 5 $ sur Steam débloquaient l'ensemble des cosmétiques payants
+  du mobile. Le PC ne représentait que ~3 % de la base de joueurs mais une
+  large part des revenus.
+- **Depuis 2021-2022** : une économie cosmétique complète existe **sur toutes
+  les plateformes, PC compris** — DLC payants sur Steam entre 0,99 et 2,99 $,
+  monnaie premium (Stars) achetable en argent réel, Cosmicubes achetés avec
+  ces Stars, boutique à deux monnaies. Environ 75 % des joueurs actifs y
+  touchent.
+
+Détail structurel intéressant : **les Stars s'obtiennent en regardant des
+publicités sur mobile, et s'achètent en argent sur PC.** Le joueur mobile paie
+en attention, le joueur PC en euros, et les deux alimentent la même économie.
+
+**Ce qu'on en retient :** le prix d'achat n'est pas le produit fini, c'est le
+ticket d'entrée. **Ce qu'on n'en retient pas :** l'économie qui va avec.
+
+### 6.2 Pourquoi on n'en copie que la moitié
+
+Une économie de cosmétiques vivante est du **LiveOps permanent** : contenu
+saisonnier, événements, collaborations. C'est un studio qui livre en continu.
+À 10 h par semaine en solo, c'est un tapis roulant intenable — et une boutique
+abandonnée fait plus de mal que pas de boutique.
+
+L'autre moitié du problème est arithmétique : 75 % de plusieurs millions de
+joueurs est une entreprise ; 75 % de cinq cents joueurs est zéro. **Une
+économie cosmétique a besoin d'une audience avant d'avoir besoin d'un
+catalogue.**
+
+### 6.3 Steam — le produit
+
+Prix : **5 à 8 €**, incluant un lot de cosmétiques suffisant pour que le jeu
+paraisse complet. Aucune publicité, aucune monnaie, aucune boutique intégrée.
+
+**Après la sortie**, et seulement si le jeu trouve son public : un ou deux
+**packs cosmétiques en DLC Steam** à 1-3 €. C'est le modèle Polus Skins, et
+c'est le seul morceau de l'économie d'Among Us qui tient dans ce budget — pas
+de monnaie, pas de boutique, pas de backend, pas de synchronisation des droits
+entre plateformes. Steam gère les droits, on dépose un pack.
+
+### 6.4 Mobile — le canal
 
 Gratuit. Deux sources :
 
@@ -287,7 +326,7 @@ Gratuit. Deux sources :
   une manche, jamais dans une partie en ligne entre amis.
 - **Un achat unique** « sans publicité + tous les cosmétiques ».
 
-### 6.3 Cosmétiques
+### 6.5 Cosmétiques
 
 Couleurs et motifs de coquille, traînées de vol. Pas de contenu payant qui
 touche au gameplay — jamais.
@@ -297,14 +336,15 @@ touche au gameplay — jamais.
 > **C'est un argument de conception, pas de monétisation : la partie entre amis
 > doit être la vedette du jeu, et le solo le mode d'entraînement.**
 
-### 6.4 Ce qu'on ne fait pas
+### 6.6 Ce qu'on ne fait pas
 
-Pas de monnaie premium, pas de coffres, pas de passe saisonnier, pas d'énergie,
-pas de pub interstitielle forcée. Ce sont des systèmes qui demandent du LiveOps
-permanent — incompatible avec 10 h par semaine, et qui abîmeraient un jeu dont
-l'argument est la simplicité.
+Pas de monnaie premium, pas de boutique intégrée, pas de coffres, pas de passe
+saisonnier, pas d'énergie, pas de pub interstitielle forcée.
 
----
+Ce sont exactement les systèmes qu'Among Us a ajoutés — et ils les ont ajoutés
+**après** avoir eu des millions de joueurs et une équipe pour les entretenir.
+Dans cet ordre. On garde la porte ouverte, on ne construit rien avant d'avoir
+l'audience qui le justifie.
 
 ## 7. Périmètre de la v1
 
@@ -378,6 +418,7 @@ Par ordre de probabilité de tuer le projet.
 | Repartir de zéro | Oui, dépôt neuf | ✅ |
 | Moteur | Godot 4 | ✅ |
 | Modèle économique | Steam premium + mobile gratuit avec pub | ✅ |
+| Économie cosmétique | Pas de monnaie ni de boutique. DLC Steam éventuels après la sortie | ✅ |
 | Hors ligne | Bots, pas de ghosts | ✅ |
 | En ligne | Hôte-joueur + code de partie | ✅ |
 | Transport | Relais, pas de P2P | ✅ |
