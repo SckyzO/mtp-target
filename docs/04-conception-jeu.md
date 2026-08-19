@@ -361,7 +361,8 @@ l'audience qui le justifie.
 
 ### 7.2 Hors v1, explicitement
 
-Éditeur de niveaux · modes d'équipe · classements mondiaux · comptes joueurs ·
+Écran splitté et multijoueur canapé · éditeur de niveaux · modes d'équipe ·
+classements mondiaux · comptes joueurs ·
 chat textuel ou vocal · replays · progression et niveaux de compte · saisons ·
 migration d'hôte · connexion directe P2P · portage console · localisation
 au-delà du français et de l'anglais.
@@ -371,7 +372,46 @@ d'avoir des joueurs qui les réclament.
 
 ---
 
-## 8. Jalons
+## 8. Comment tester, quand on développe seul le soir
+
+Le critère de sortie de M1 exige des joueurs. Il faut donc un moyen d'en avoir
+avant d'avoir le moindre réseau.
+
+| Étape | Moyen de test | Ce que ça permet |
+|---|---|---|
+| **M1-M2** | **Parsec** — on donne la main à un ami, il joue sur notre machine à distance | Faire tester un prototype sans build à distribuer, sans netcode, sans compte |
+| **M3** | Deux machines sur le même Wi-Fi | Valider le multijoueur, les collisions, le ressenti à plusieurs |
+| **M4** | Relais + code de partie, avec 3-4 amis distants | Valider le NAT, la latence réelle, la reconnexion |
+| **M5** | Build mobile sur son propre téléphone, puis TestFlight et piste de test Google Play | Valider le tactile, la perf, la batterie, le cycle de vie applicatif |
+
+### Parsec n'est pas une fonctionnalité du jeu
+
+Parsec diffuse l'image d'**une seule machine** et renvoie les entrées du
+spectateur. Pour jouer à plusieurs par ce biais, il faudrait un mode
+multijoueur **sur un même écran** — donc de l'écran splitté.
+
+Or ce jeu l'interdit en pratique : huit participants partent dans huit
+directions sur un grand niveau, une caméra partagée est impossible, et quatre
+rendus simultanés coûteraient cher pour un bénéfice nul dès que le vrai réseau
+existe. **Pas d'écran splitté, pas de multijoueur canapé.**
+
+Parsec reste l'outil de playtest des deux premiers jalons, et rien d'autre.
+
+### Chronologie de l'infrastructure
+
+Aucune dépense avant M4, c'est-à-dire pas avant huit à dix mois.
+
+| Jalon | Infrastructure | Coût mensuel |
+|---|---|---|
+| M1, M2 | aucune | 0 € |
+| M3 | aucune (LAN, IP directe) | 0 € |
+| M4 | un VPS pour le relais | ~5 € |
+| Sortie PC | relais Steam, inclus | 0 € |
+| Sortie mobile | le VPS grossit avec le trafic | 5 à 40 € |
+
+---
+
+## 9. Jalons
 
 À ~10 h par semaine. Les durées sont des ordres de grandeur, pas des engagements.
 
@@ -395,7 +435,7 @@ en premier.
 
 ---
 
-## 9. Risques
+## 10. Risques
 
 Par ordre de probabilité de tuer le projet.
 
@@ -411,7 +451,7 @@ Par ordre de probabilité de tuer le projet.
 
 ---
 
-## 10. Décisions figées
+## 11. Décisions figées
 
 | Sujet | Décision | Quand |
 |---|---|---|
@@ -419,12 +459,14 @@ Par ordre de probabilité de tuer le projet.
 | Moteur | Godot 4 | ✅ |
 | Modèle économique | Steam premium + mobile gratuit avec pub | ✅ |
 | Économie cosmétique | Pas de monnaie ni de boutique. DLC Steam éventuels après la sortie | ✅ |
+| Mobile | Un achat unique « sans pub + cosmétiques », pas de boutique à l'unité | ✅ |
+| Multijoueur canapé / écran splitté | Non. Parsec sert de banc d'essai, pas de mode de jeu | ✅ |
 | Hors ligne | Bots, pas de ghosts | ✅ |
 | En ligne | Hôte-joueur + code de partie | ✅ |
 | Transport | Relais, pas de P2P | ✅ |
 | Taille de partie | 8 | ✅ |
 
-## 11. Décisions ouvertes
+## 12. Décisions ouvertes
 
 1. **Le nom.** Bloque le dépôt, le domaine, les pages boutique, l'identité visuelle.
 2. **La direction artistique.** Détermine le budget de sous-traitance — le
